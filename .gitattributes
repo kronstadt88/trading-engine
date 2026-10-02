@@ -1,0 +1,5 @@
+# Evidence checksums refer to exact original bytes, including line endings.
+*.csv -text
+*.png binary
+*.jpg binary
+*.jpeg binary

@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "id": "synthetic-tooling-only",
+  "evidence_kind": "synthetic",
+  "annotator": "test fixture; not a domain expert",
+  "labelled_at": "2026-01-02T00:00:00Z",
+  "notes": "Invented geometry tests software only. Not an example of any structural family.",
+  "series": [
+    {
+      "id": "one",
+      "asset": "SYNTHETIC",
+      "timeframe": "1m",
+      "source": "synthetic fixture",
+      "timezone": "UTC",
+      "bar_timestamp": "close",
+      "ohlcv": "ohlcv.csv",
+      "sha256": "80068fc5e27e05d0fb9ffc0ea86c3afea7196d1abbb9825f4ed2bff72a67b27f"
+    }
+  ],
+  "images": [
+    {
+      "id": "chart",
+      "series_id": "one",
+      "path": "chart.png",
+      "sha256": "7bfddd276793882a1db3e9596813e8d1a72a3b71f291df0aca8a307cccda9142"
+    }
+  ],
+  "structures": [
+    {
+      "id": "fixture-1",
+      "series_id": "one",
+      "structure_type": "NEEDS_VISUAL_GROUND_TRUTH",
+      "direction": "bullish",
+      "classification": "ambiguous",
+      "definition_status": "NEEDS_VISUAL_GROUND_TRUTH",
+      "start": "2026-01-01T00:01:00Z",
+      "end": "2026-01-01T00:05:00Z",
+      "known_at": "2026-01-01T00:06:00Z",
+      "points": [
+        {
+          "id": "A",
+          "timestamp": "2026-01-01T00:01:00Z",
+          "price": 13
+        },
+        {
+          "id": "B",
+          "timestamp": "2026-01-01T00:03:00Z",
+          "price": 16
+        },
+        {
+          "id": "C",
+          "timestamp": "2026-01-01T00:05:00Z",
+          "price": 8
+        }
+      ],
+      "legs": [
+        [
+          "A",
+          "B"
+        ],
+        [
+          "B",
+          "C"
+        ]
+      ],
+      "annotations": [
+        {
+          "concept": "arranque",
+          "point_ids": [
+            "C"
+          ],
+          "status": "NEEDS_VISUAL_GROUND_TRUTH",
+          "orientation": "NEEDS_VISUAL_GROUND_TRUTH",
+          "known_at": "2026-01-01T00:06:00Z",
+          "notes": "Placeholder, not an arranque definition"
+        }
+      ],
+      "evolution": [],
+      "parent_id": null,
+      "context_relation": "NEEDS_VISUAL_GROUND_TRUTH",
+      "image_ids": [
+        "chart"
+      ],
+      "notes": "Only tests overlays; ambiguous on purpose."
+    }
+  ]
+}
