@@ -20,3 +20,7 @@ data/labelled/
 Each label should include the asset, timeframe, relevant timestamps/prices, direction, validity, notes and source image.
 
 Positive examples alone are insufficient. Add ambiguous and negative examples too.
+
+Use the versioned bundle workflow in `docs/12-ground-truth-workflow.md`.
+No human ground truth has been added yet. Synthetic tooling fixtures belong under
+`tests/fixtures`, never in this human evidence directory.

@@ -1,3 +1,7 @@
+"""Legacy in-memory labels; use labels.bundle for versioned research evidence.
+
+This class is not accepted by the evaluation/inspection CLI.
+"""
 from __future__ import annotations
 
 from dataclasses import dataclass, field

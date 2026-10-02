@@ -22,6 +22,8 @@ def classify_ratio(measured: float, tolerance_one: float = 0.20, tolerance_two: 
     """Classify an approximate structural ratio.
 
     '1' and '2' are families, not exact equalities.
+    Defaults are uncalibrated research settings: NEEDS_VISUAL_GROUND_TRUTH.
+    This helper does not classify a structure.
     """
     candidates = [
         ("1", abs(measured - 1.0), tolerance_one),
